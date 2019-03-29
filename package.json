@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-string-replacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A rollup plugin wrapper for the \"replace-in-file\" node package",
   "main": "index.js",
   "repository": "https://github.com/droplab/rollup-plugin-string-replacer.git",
