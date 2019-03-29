@@ -1,0 +1,13 @@
+{
+  "name": "rollup-plugin-string-replacer",
+  "version": "1.0.0",
+  "description": "A rollup plugin wrapper for the \"replace-in-file\" node package",
+  "main": "index.js",
+  "repository": "https://github.com/droplab/rollup-plugin-string-replacer.git",
+  "author": "Mike Dunlop <miked@droplab.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "replace-in-file": "^3.4.4"
+  }
+}
