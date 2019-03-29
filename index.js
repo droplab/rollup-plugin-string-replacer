@@ -1,25 +1,20 @@
-import replace from 'replace-in-file'
-import name from './package.json'
-import colors from 'colors'
+const replace = require('replace-in-file');
+const name = require('./package.json');
 
-export default stringReplacer(options={})
+require('colors');
+
+module.exports = function stringReplacer(_options={})
 {
-    const extraOptions = options.options || {}
+	const extraOptions = _options.options || {};
+	const options = Object.assign(_options,extraOptions);
 	
 	return {
-        name,
-		writeBundle(e)
+		name,
+		generateBundle()
 		{
 			try 
 			{
-				const changes = replace.sync(
-				{
-					files: options.files,
-					from: options.from,
-					to: options.to,
-					...extraOptions
-				})
-
+				const changes = replace.sync(options);
 				console.log('[REPLACE]'.yellow, options.from, 'to'.yellow, options.to, changes);
 			}
 			catch(e)
@@ -27,5 +22,5 @@ export default stringReplacer(options={})
 				console.log('[REPLACE][ERROR]'.red, options.from);
 			}
 		}
-    }
+	}
 };
