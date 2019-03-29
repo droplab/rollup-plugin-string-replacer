@@ -1,5 +1,5 @@
 # rollup-plugin-string-replacer
-A rollup plugin wrapper for the "replace-in-file" node package. Will run after the bundle is generated to make honor any async file operations.
+A rollup plugin wrapper for the "replace-in-file" node package. Will run after the bundle is generated to honor any async file operations.
 
 # Usage
 ```
