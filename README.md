@@ -14,10 +14,10 @@ explort default {
 	'plugins': 
 	[
 		stringReplacer({
-			'files': 'path', 	// (string|array|glob)
-			'from': 'text', 	// (string|array|regex|function)
-			'to': 'text', 		// (string|array|function)
-			'options': {} 		// passthru options for replace-in-file
+			'files': 'path',	// (string|array|glob)
+			'from': 'text',		// (string|array|regex|function)
+			'to': 'text',		// (string|array|function)
+			'options': {}		// passthru options for replace-in-file
 		})
 	]
 }
